@@ -4,9 +4,6 @@ import java.util.ArrayList;
 
 /**
  * Bug demo  - solution to  question P8.12 in Book
- * <p>
- * <p>
-
  */
 public class App
 {
@@ -21,6 +18,7 @@ public class App
     {
         Bug bug1 = new Bug(0);
         bug1.turn();
+        bug1.move();
         bug1.move();
 
 //     Create ArrayList of Bug objects. Populate & display
