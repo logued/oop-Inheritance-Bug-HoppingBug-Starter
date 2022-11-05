@@ -1,30 +1,28 @@
 package dkit.sd2;
 
 /**
- * Second version of Bug - uses enum Direction as datatype of direction instance variable.
- * Uses static Counter to give each new Bug an id
+ * - uses enum Direction as datatype of direction instance variable.
+ * - uses static Counter to give each new Bug a unique sequential ID
  */
 public class Bug
 {
-
-    private String id;
-    private int position;
-    private Direction direction;
-    private static int counter = 0;
+    private String id;          // unique id code e.g. "B1"
+    private int position;       // range:  negative...0...positive
+    private Direction direction;        // an Enum (Enumeration)
+    private static int counter = 0;     //class variable to maintain count
 
     public Bug(int initialPosition)
     {
-        counter++;
-        this.id = "B" + counter;
+        this.id =  "B" + counter;
         this.position = initialPosition;
-        this.direction = Direction.RIGHT;
+        this.direction = Direction.RIGHT; // default initial direction
+        counter++;
     }
 
     public int getPosition()
     {
         return this.position;
     }
-
 
     public String getId()
     {
@@ -44,8 +42,8 @@ public class Bug
     }
 
     /**
-     * Move Bug object one place along line in direction it's facing
-     * If R then plus, if L then minus
+     * Move Bug object one place along line in direction it's facing.
+     * If RIGHT then add 1, if LEFT then subtract 1
      */
     public void move()
     {
