@@ -17,9 +17,14 @@ public class App
     public void start()
     {
         Bug bug1 = new Bug(0);
+        System.out.println(bug1);
+        bug1.move();
+        bug1.move();
+        System.out.println(bug1);
         bug1.turn();
         bug1.move();
         bug1.move();
+        System.out.println(bug1);
 
 //     Create ArrayList of Bug objects. Populate & display
 
@@ -32,17 +37,18 @@ public class App
         System.out.println("\nInitial Bugs in ArrayList");
         for (Bug bug : bugList)
         {
-            System.out.println(bug);
+            System.out.println(bug.toString());
         }
 
 
         //TODO complete the "HoppingBug" class as outlined in the empty starter class.
 
-        //TODO #1 Create a single HoppingBug object. Test and correct your HoppingBug class
+        //TODO #1 Create a single HoppingBug object and test the move() and toString methods.
 
         //TODO #2 Create and populate a single ArrayList of both Bug and HoppingBug objects
+        //        ( Use an ArrayList<Bug> )
 
-        //TODO #3 Display details of all bugs in ArrayList (use toString())
+        //TODO #3 Display details of all bugs in the ArrayList (use toString())
 
         //TODO #4 Call move() for all bugs in ArrayList. Display their new details (use toString())
 
