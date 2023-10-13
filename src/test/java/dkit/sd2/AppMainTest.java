@@ -1,14 +1,13 @@
 package dkit.sd2;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple AppMain.
  */
-public class AppTest
+public class AppMainTest
 {
 
     @Test
@@ -47,7 +46,6 @@ public class AppTest
         Direction expected = Direction.LEFT;
         Direction actual = b.getDirection();
         assertEquals(expected, actual);
-
     }
 
 }

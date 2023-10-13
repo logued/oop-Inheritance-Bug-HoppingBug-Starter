@@ -3,19 +3,17 @@ package dkit.sd2;
 import java.util.ArrayList;
 
 /**
- * Bug demo  - solution to  question P8.12 in Book
+ * Bug demo  - solution to  question P8.12 from Big Java Book
+ * and Starter code and Questions for HoppingBug
  */
-public class App
-{
-    public static void main(String[] args)
-    {
-        System.out.println("\n*** BUG - App ***");
-        App app = new App();
-        app.start();
+public class AppMain {
+    public static void main(String[] args) {
+        System.out.println("\n*** BUG - AppMain ***");
+        AppMain appMain = new AppMain();
+        appMain.start();
     }
 
-    public void start()
-    {
+    public void start() {
         Bug bug1 = new Bug(0);
         System.out.println(bug1);
         bug1.move();
@@ -27,16 +25,14 @@ public class App
         System.out.println(bug1);
 
 //     Create ArrayList of Bug objects. Populate & display
-
         ArrayList<Bug> bugList = new ArrayList<>();
 
-        bugList.add(bug1);
+        bugList.add(bug1);  // add object that already exists
         bugList.add(new Bug(5));
         bugList.add(new Bug(25));
 
         System.out.println("\nInitial Bugs in ArrayList");
-        for (Bug bug : bugList)
-        {
+        for (Bug bug : bugList) {
             System.out.println(bug.toString());
         }
 
@@ -50,13 +46,14 @@ public class App
 
         //TODO #3 Display details of all bugs in the ArrayList (use toString())
 
-        //TODO #4 Call move() for all bugs in ArrayList. Display their new details (use toString())
+        //TODO #4 Iterate over all bugs in the ArrayList, and call move() for each one.
+        // Display their new details (use toString())
 
         //TODO #5  Display id and hoppingDistance for all hoppingBugs in ArrayList.
 
-        //TODO #6 Implement and test .equals() for Bug objects
+        //TODO #6 Implement and test .equals() for Bug objects (Compare based on id only)
 
-        //TODO #7 Implement and test .equals() for HoppingBug objects
+        //TODO #7 WHat about .equals() for HoppingBug objects ?  discuss
 
     }
 
