@@ -36,8 +36,8 @@ public class AppMain {
             System.out.println(bug.toString());
         }
 
-        HoppingBug hoppingBug1 = new HoppingBug(0,3);
-        bugList.add(hoppingBug1);
+        //HoppingBug hoppingBug1 = new HoppingBug(0,3);
+        //bugList.add(hoppingBug1);
 
         //TODO Move all bugs in the list
         for (Bug bug : bugList) {
