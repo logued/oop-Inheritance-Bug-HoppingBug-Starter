@@ -42,9 +42,9 @@ public class Bug
      */
     public void move() {
         if (this.direction == Direction.RIGHT)
-            this.position += 1;
+            this.position = this.position + 1;
         else
-            this.position -= 1;
+            this.position = this.position - 1;
     }
 
     public Direction getDirection()

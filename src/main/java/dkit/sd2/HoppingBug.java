@@ -4,10 +4,9 @@ package dkit.sd2;
 // - make HoppingBug inherit from Bug by using "extends"
 // - add a new field "hoppingDistance"
 // - add appropriate constructor- use super()
-// - getter(s) and setter(s)
+// - add any new getter(s) and setter(s)
 // - override move() based on hoppingDistance
 // - override toString()
-
 
 public class HoppingBug {
 

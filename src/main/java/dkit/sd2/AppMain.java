@@ -1,4 +1,4 @@
-package dkit.sd2;
+package dkit.sd2;       // October 2024
 
 import java.util.ArrayList;
 
@@ -14,6 +14,7 @@ public class AppMain {
     }
 
     public void start() {
+
         Bug bug1 = new Bug(0);
         System.out.println(bug1);
         bug1.move();
@@ -26,9 +27,8 @@ public class AppMain {
 
 //     Create ArrayList of Bug objects. Populate & display
         ArrayList<Bug> bugList = new ArrayList<>();
-
         bugList.add(bug1);  // add object that already exists
-        bugList.add(new Bug(5));
+        bugList.add( new Bug(5) );
         bugList.add(new Bug(25));
 
         System.out.println("\nInitial Bugs in ArrayList");
@@ -36,6 +36,20 @@ public class AppMain {
             System.out.println(bug.toString());
         }
 
+        HoppingBug hoppingBug1 = new HoppingBug(0,3);
+        bugList.add(hoppingBug1);
+
+        //TODO Move all bugs in the list
+        for (Bug bug : bugList) {
+            bug.move();
+        }
+
+        for (Bug bug : bugList) {
+            System.out.println(bug);
+        }
+
+        // TODO change direction of all bugs
+        //
 
         //TODO complete the "HoppingBug" class as outlined in the empty starter class.
 
