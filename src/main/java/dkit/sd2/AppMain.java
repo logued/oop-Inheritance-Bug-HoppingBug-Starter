@@ -22,7 +22,7 @@ public class AppMain {
         System.out.println(bug1);
         bug1.turn();
         bug1.move();
-        bug1.move();
+
         System.out.println(bug1);
 
 //     Create ArrayList of Bug objects. Populate & display
